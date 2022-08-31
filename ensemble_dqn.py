@@ -9,11 +9,12 @@ from collections import namedtuple
 import numpy as np
 import datetime, math
 import gym
+from dqn import DQN
 
 # Hyper Parameters
 MAX_EPI=1000
 MAX_STEP = 10000
-SAVE_INTERVAL = 200
+SAVE_INTERVAL = 20
 TARGET_UPDATE_INTERVAL = 20
 
 BATCH_SIZE = 128
@@ -144,11 +145,12 @@ class replay_buffer:
     def sample(self, batch_size):
         return random.sample(self.buffer, batch_size)
 
-class DQN(object):
-    def __init__(self, env):
-        self.action_shape = env.action_space.n
+class EnsembleDQN(object):
+    def __init__(self, env, models):
+        self.models = models
+        self.action_size = env.action_space.n
         self.obs_shape = env.observation_space.shape
-        self.eval_net, self.target_net = QNetwork(self.action_shape, self.obs_shape).to(device), QNetwork(self.action_shape, self.obs_shape).to(device)
+        self.eval_net, self.target_net = QNetwork(self.action_size, self.obs_shape).to(device), QNetwork(self.action_size, self.obs_shape).to(device)
         self.learn_step_counter = 0                                     # for target updating
         self.optimizer = torch.optim.Adam(self.eval_net.parameters(), lr=LR)
         self.loss_func = nn.MSELoss()
@@ -166,7 +168,7 @@ class DQN(object):
             action = torch.max(actions_value, 1)[1].data.cpu().numpy()[0]     # return the argmax
             # print(action)
         else:   # random
-            action = np.random.randint(0, self.action_shape)
+            action = np.random.randint(0, self.action_size)
         return action
 
     def learn(self, sample,):
@@ -197,15 +199,23 @@ class DQN(object):
         # Select the indices of each row
         none_terminal_next_states = next_states.index_select(0, none_terminal_next_state_index)
 
-        Q_s_prime_a_prime = torch.zeros(len(sample), 1, device=device)
+        all_target_Q = torch.empty(size=(len(self.models)+1, len(sample), self.action_size))
+        Q_0 = torch.zeros(len(sample), self.action_size, device=device)
         if len(none_terminal_next_states) != 0:
-            Q_s_prime_a_prime[none_terminal_next_state_index] = self.target_net(none_terminal_next_states).detach().max(1)[0].unsqueeze(1)
+            Q_0[none_terminal_next_state_index] = self.target_net(none_terminal_next_states).detach()
+            all_target_Q[0] = Q_0
 
-        # Q_s_prime_a_prime = self.target_net(next_states).detach().max(1, keepdim=True)[0]  # this one is simpler regardless of terminal state
-        Q_s_prime_a_prime = (Q_s_prime_a_prime-Q_s_prime_a_prime.mean())/ (Q_s_prime_a_prime.std() + 1e-5)  # normalization
+            for i, model in enumerate(self.models):
+                Q_i = torch.zeros(len(sample), self.action_size, device=device)
+                Q_i[none_terminal_next_state_index] = model.target_net(none_terminal_next_states).detach()
+                all_target_Q[i+1] = Q_i
+
+        max_target_Q = torch.max(all_target_Q, dim=0)[0] # max over different models
+        target_Q = max_target_Q.max(1)[0].unsqueeze(1)
+        target_Q = (target_Q-target_Q.mean())/ (target_Q.std() + 1e-5)  # normalization
         
         # Compute the target
-        target = rewards + GAMMA * Q_s_prime_a_prime
+        target = rewards + GAMMA * target_Q
 
         # Update with loss
         # loss = self.loss_func(target.detach(), Q_s_a)
@@ -236,6 +246,15 @@ class DQN(object):
         Update the target model when necessary.
         """
         self.target_net.load_state_dict(self.eval_net.state_dict())
+
+def load_models(env, num, path=None):
+    models = []
+    for i in range(num):
+        model = DQN(env)
+        model.load_model(path+str(i))
+        models.append(model)
+    return models
+
     
 def rollout(env, model):
     r_buffer = replay_buffer(REPLAY_BUFFER_SIZE)
@@ -264,12 +283,13 @@ def rollout(env, model):
             s = s_
         print('Ep: ', epi, '| Ep_r: ', epi_r, '| Steps: ', step, f'| Ep_Loss: {epi_loss:.4f}', )
         log.append([epi, epi_r, step])
-        if epi % SAVE_INTERVAL == 0:
-            model.save_model(model_path='model/dqn2')
+        # if epi % SAVE_INTERVAL == 0:
+            # model.save_model()
             # np.save('log/'+timestamp, log)
 
 if __name__ == '__main__':
     env = gym.make('CartPole-v1')
     print(env.observation_space, env.action_space)
-    model = DQN(env)
-    rollout(env, model)
+    models = load_models(env, 2, path='model/dqn')
+    ensemble_dqn = EnsembleDQN(env, models)
+    rollout(env, ensemble_dqn)
