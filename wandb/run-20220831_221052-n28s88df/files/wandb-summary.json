@@ -1,0 +1,1 @@
+{"global_step": 360, "_timestamp": 1661998336.681177, "charts/reward": 169.0, "charts/loss": 1.0490896701812744, "charts/episode length": 168.0, "_runtime": 83.88088893890381, "_step": 18, "_wandb": {"runtime": 181}}

@@ -1,0 +1,12 @@
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_setup.py:_flush():76] Configure stats pid to 1842078
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_setup.py:_flush():76] Loading settings from /home/quantumiracle/.config/wandb/settings
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_setup.py:_flush():76] Loading settings from /home/quantumiracle/research/ensemble-dqn/wandb/settings
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_dqn.py', 'program': 'train_dqn.py'}
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_init.py:_log_setup():461] Logging user logs to /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_221852-shnan3ge/logs/debug.log
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_init.py:_log_setup():462] Logging internal logs to /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_221852-shnan3ge/logs/debug-internal.log
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_init.py:init():495] calling init triggers
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {'wandb_project': 'ensemble_dqn', 'wandb_entity': 'quantumiracle', 'wandb_name': 'dqn2'}
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_init.py:init():543] wandb.init() called when a run is still active
+2022-08-31 22:18:52,176 INFO    MainThread:1842078 [wandb_run.py:_tensorboard_callback():1280] tensorboard callback: runs/dqn2, True

@@ -1,0 +1,158 @@
+2022-08-31 22:55:27,111 INFO    MainThread:1851152 [wandb_setup.py:_flush():76] Configure stats pid to 1851152
+2022-08-31 22:55:27,111 INFO    MainThread:1851152 [wandb_setup.py:_flush():76] Loading settings from /home/quantumiracle/.config/wandb/settings
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_setup.py:_flush():76] Loading settings from /home/quantumiracle/research/ensemble-dqn/wandb/settings
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train_dqn.py', 'program': 'train_dqn.py'}
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:_log_setup():461] Logging user logs to /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225527-nb92j2em/logs/debug.log
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:_log_setup():462] Logging internal logs to /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225527-nb92j2em/logs/debug-internal.log
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:init():495] calling init triggers
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:init():499] wandb.init called with sweep_config: {}
+config: {'wandb_project': 'ensemble_dqn', 'wandb_entity': 'quantumiracle', 'wandb_name': 'dqn0'}
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:init():548] starting backend
+2022-08-31 22:55:27,112 INFO    MainThread:1851152 [wandb_init.py:init():552] setting up manager
+2022-08-31 22:55:27,114 INFO    MainThread:1851152 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-08-31 22:55:27,117 INFO    MainThread:1851152 [wandb_init.py:init():558] backend started and connected
+2022-08-31 22:55:27,119 INFO    MainThread:1851152 [wandb_init.py:init():636] updated telemetry
+2022-08-31 22:55:27,133 INFO    MainThread:1851152 [wandb_init.py:init():668] communicating run to backend with 30 second timeout
+2022-08-31 22:55:27,304 INFO    MainThread:1851152 [wandb_run.py:_on_init():1982] communicating current version
+2022-08-31 22:55:27,350 INFO    MainThread:1851152 [wandb_run.py:_on_init():1986] got version response 
+2022-08-31 22:55:27,350 INFO    MainThread:1851152 [wandb_init.py:init():700] starting run threads in backend
+2022-08-31 22:55:30,480 INFO    MainThread:1851152 [wandb_run.py:_console_start():1962] atexit reg
+2022-08-31 22:55:30,480 INFO    MainThread:1851152 [wandb_run.py:_redirect():1820] redirect: SettingsConsole.WRAP_RAW
+2022-08-31 22:55:30,481 INFO    MainThread:1851152 [wandb_run.py:_redirect():1885] Wrapping output streams.
+2022-08-31 22:55:30,481 INFO    MainThread:1851152 [wandb_run.py:_redirect():1907] Redirects installed.
+2022-08-31 22:55:30,481 INFO    MainThread:1851152 [wandb_init.py:init():732] run started, returning control to user process
+2022-08-31 22:55:30,481 INFO    MainThread:1851152 [wandb_run.py:_tensorboard_callback():1280] tensorboard callback: runs/dqn0, True
+2022-08-31 22:57:41,157 INFO    MainThread:1851152 [wandb_run.py:_finish():1728] finishing run quantumiracle/ensemble_dqn/nb92j2em
+2022-08-31 22:57:41,157 INFO    MainThread:1851152 [wandb_run.py:_atexit_cleanup():1931] got exitcode: 0
+2022-08-31 22:57:41,157 INFO    MainThread:1851152 [wandb_run.py:_restore():1914] restore
+2022-08-31 22:57:41,158 INFO    MainThread:1851152 [wandb_run.py:_restore():1920] restore done
+2022-08-31 22:57:41,160 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 27627
+  total_bytes: 27627
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:46,260 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: None
+2022-08-31 22:57:47,811 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 27627
+  total_bytes: 27627
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:47,923 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 27627
+  total_bytes: 27627
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:50,783 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 2
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 27627
+  total_bytes: 27627
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,370 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 5
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 27627
+  total_bytes: 39605
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,471 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 7107
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,573 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,675 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,777 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,879 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:51,980 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+
+2022-08-31 22:57:52,241 INFO    MainThread:1851152 [wandb_run.py:_on_finish():2221] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 7
+  other_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 52170
+  total_bytes: 52170
+  deduped_bytes: 2387
+}
+local_info {
+}
+
+2022-08-31 22:57:53,346 INFO    MainThread:1851152 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2022-08-31 22:57:53,346 INFO    MainThread:1851152 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2022-08-31 22:57:53,348 INFO    MainThread:1851152 [wandb_run.py:_footer_sync_info():3261] logging synced files

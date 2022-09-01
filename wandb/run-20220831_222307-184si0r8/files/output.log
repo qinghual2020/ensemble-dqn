@@ -1,0 +1,13 @@
+Collecting experience...
+Ep:  0 | Ep_r:  26.0 | Steps:  25 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  18.0 | Steps:  17 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  18.0 | Steps:  17 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  11.0 | Steps:  10 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  9.0 | Steps:  8 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  27.0 | Steps:  26 | Ep_Loss: 0.0000
+Ep:  30 | Ep_r:  17.0 | Steps:  16 | Ep_Loss: 0.0000
+Ep:  35 | Ep_r:  45.0 | Steps:  44 | Ep_Loss: 0.0000
+Ep:  40 | Ep_r:  34.0 | Steps:  33 | Ep_Loss: 0.0000
+Ep:  45 | Ep_r:  19.0 | Steps:  18 | Ep_Loss: 0.0000
+/home/quantumiracle/research/ensemble-dqn/dqn.py:135: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])

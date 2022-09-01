@@ -1,0 +1,18 @@
+/home/quantumiracle/research/ensemble-dqn/dqn.py:135: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Traceback (most recent call last):
+  File "train_dqn.py", line 81, in <module>
+    rollout(env, model, i, writer)
+  File "train_dqn.py", line 64, in rollout
+    model.save_model(model_path=f'model1/dqn{id}')
+  File "/home/quantumiracle/research/ensemble-dqn/dqn.py", line 226, in save_model
+    torch.save(self.eval_net.state_dict(), model_path)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 377, in save
+    with _open_file_like(f, 'wb') as opened_file:
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 231, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/quantumiracle/anaconda3/envs/x/lib/python3.7/site-packages/torch/serialization.py", line 212, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'model1/dqn0'
+Collecting experience...
+Ep:  0 | Ep_r:  17.0 | Steps:  16 | Ep_Loss: 0.0000

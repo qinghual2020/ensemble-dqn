@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.15.0-46-generic-x86_64-with-debian-bullseye-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2022-09-01T02:48:26.199890",
+    "startedAt": "2022-09-01T02:48:25.867043",
+    "docker": null,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "ensemble_dqn.py",
+    "codePath": "ensemble_dqn.py",
+    "git": {
+        "remote": "https://github.com/quantumiracle/ensemble-dqn",
+        "commit": "977b66966c16c5c607dfbdc5d8ec619cb5117da5"
+    },
+    "email": "zhding@mail.ustc.edu.cn",
+    "root": "/home/quantumiracle/research/ensemble-dqn",
+    "host": "quantumiracle-XPS-8940",
+    "username": "quantumiracle",
+    "executable": "/home/quantumiracle/anaconda3/envs/x/bin/python"
+}

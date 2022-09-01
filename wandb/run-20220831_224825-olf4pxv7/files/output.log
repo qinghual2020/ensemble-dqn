@@ -1,0 +1,30 @@
+Collecting experience...
+Ep:  0 | Ep_r:  10.0 | Steps:  9 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  19.0 | Steps:  18 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  38.0 | Steps:  37 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  25.0 | Steps:  24 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  38.0 | Steps:  37 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  13.0 | Steps:  12 | Ep_Loss: 0.0000
+Ep:  30 | Ep_r:  29.0 | Steps:  28 | Ep_Loss: 0.0000
+Ep:  35 | Ep_r:  13.0 | Steps:  12 | Ep_Loss: 0.0000
+Ep:  40 | Ep_r:  13.0 | Steps:  12 | Ep_Loss: 0.0000
+Ep:  45 | Ep_r:  16.0 | Steps:  15 | Ep_Loss: 0.0000
+Ep:  50 | Ep_r:  18.0 | Steps:  17 | Ep_Loss: 0.0000
+Ep:  55 | Ep_r:  14.0 | Steps:  13 | Ep_Loss: 0.0000
+Ep:  60 | Ep_r:  30.0 | Steps:  29 | Ep_Loss: 0.0000
+Ep:  65 | Ep_r:  31.0 | Steps:  30 | Ep_Loss: 0.0000
+Ep:  70 | Ep_r:  15.0 | Steps:  14 | Ep_Loss: 0.0000
+Ep:  75 | Ep_r:  19.0 | Steps:  18 | Ep_Loss: 0.0000
+Ep:  80 | Ep_r:  11.0 | Steps:  10 | Ep_Loss: 0.0000
+Ep:  85 | Ep_r:  11.0 | Steps:  10 | Ep_Loss: 0.0000
+Ep:  90 | Ep_r:  10.0 | Steps:  9 | Ep_Loss: 0.0000
+ensemble_dqn.py:136: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at  ../torch/csrc/utils/tensor_new.cpp:201.)
+  wrap_tensor = lambda x: torch.tensor([x])
+Traceback (most recent call last):
+  File "ensemble_dqn.py", line 307, in <module>
+    rollout(env, ensemble_dqn, writer)
+  File "ensemble_dqn.py", line 278, in rollout
+    sample = r_buffer.sample(BATCH_SIZE)
+  File "ensemble_dqn.py", line 146, in sample
+    return random.sample(self.buffer, batch_size)
+NameError: name 'random' is not defined

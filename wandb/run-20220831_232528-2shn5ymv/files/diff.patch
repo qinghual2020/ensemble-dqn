@@ -1,0 +1,127 @@
+diff --git a/__pycache__/dqn.cpython-37.pyc b/__pycache__/dqn.cpython-37.pyc
+index dc1c798..59ddf83 100644
+Binary files a/__pycache__/dqn.cpython-37.pyc and b/__pycache__/dqn.cpython-37.pyc differ
+diff --git a/dqn.py b/dqn.py
+index 7532e60..46ead82 100644
+--- a/dqn.py
++++ b/dqn.py
+@@ -223,13 +223,15 @@ class DQN(object):
+ 
+     def save_model(self, model_path=None):
+         if model_path is not None:
+-            torch.save(self.eval_net.state_dict(), model_path)
++            torch.save(self.eval_net.state_dict(), model_path+'dqn')
++            torch.save(self.target_net.state_dict(), model_path+'dqn_target')
+         else:
+             torch.save(self.eval_net.state_dict(), 'model/dqn')
++            torch.save(self.target_net.state_dict(), 'model/dqn_target')
+ 
+     def load_model(self, model_path=None):
+-        self.eval_net.load_state_dict(torch.load(model_path))
+-        self.update_target()
++        self.eval_net.load_state_dict(torch.load(model_path+'dqn'))
++        self.target_net.load_state_dict(torch.load(model_path+'dqn_target'))
+ 
+     def update_target(self, ):
+         """
+@@ -265,7 +267,7 @@ def rollout(env, model):
+         print('Ep: ', epi, '| Ep_r: ', epi_r, '| Steps: ', step, f'| Ep_Loss: {epi_loss:.4f}', )
+         log.append([epi, epi_r, step])
+         if epi % SAVE_INTERVAL == 0:
+-            model.save_model(model_path='model/dqn2')
++            model.save_model(model_path='model/')
+             # np.save('log/'+timestamp, log)
+ 
+ if __name__ == '__main__':
+diff --git a/ensemble_dqn.py b/ensemble_dqn.py
+index c3b7ba2..8b276b6 100644
+--- a/ensemble_dqn.py
++++ b/ensemble_dqn.py
+@@ -2,21 +2,21 @@
+ import torch
+ import torch.nn as nn
+ import torch.nn.functional as f
+-import torch.optim as optim
+-import time
+-import random, numpy, argparse, logging, os
+ from collections import namedtuple
+ import numpy as np
+-import datetime, math
++import datetime, math, random
+ import gym
+ from dqn import DQN
++from torch.utils.tensorboard import SummaryWriter
++import wandb
++from wandb_utils import init_wandb
+ 
+ # Hyper Parameters
+-MAX_EPI=1000
++MAX_EPI=500
+ MAX_STEP = 10000
+-SAVE_INTERVAL = 20
++SAVE_INTERVAL = 200
+ TARGET_UPDATE_INTERVAL = 20
+-
++LOG_INTERVAL = 3
+ BATCH_SIZE = 128
+ REPLAY_BUFFER_SIZE = 100000
+ REPLAY_START_SIZE = 2000
+@@ -235,11 +235,11 @@ class EnsembleDQN(object):
+         if model_path is not None:
+             torch.save(self.eval_net.state_dict(), model_path)
+         else:
+-            torch.save(self.eval_net.state_dict(), 'model/dqn')
++            torch.save(self.eval_net.state_dict(), 'model/ensemble_dqn')
+ 
+     def load_model(self, model_path=None):
+-        self.eval_net.load_state_dict(torch.load(model_path))
+-        self.update_target()
++        self.eval_net.load_state_dict(torch.load(model_path+'ensemble_dqn'))
++        self.target_net.load_state_dict(torch.load(model_path+'ensemble_dqn_target'))
+ 
+     def update_target(self, ):
+         """
+@@ -256,7 +256,7 @@ def load_models(env, num, path=None):
+     return models
+ 
+     
+-def rollout(env, model):
++def rollout(env, model, writer):
+     r_buffer = replay_buffer(REPLAY_BUFFER_SIZE)
+     log = []
+     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M")
+@@ -281,8 +281,12 @@ def rollout(env, model):
+             if done:
+                 break
+             s = s_
+-        print('Ep: ', epi, '| Ep_r: ', epi_r, '| Steps: ', step, f'| Ep_Loss: {epi_loss:.4f}', )
+-        log.append([epi, epi_r, step])
++        if epi % LOG_INTERVAL == 0: 
++            print('Ep: ', epi, '| Ep_r: ', epi_r, '| Steps: ', step, f'| Ep_Loss: {epi_loss:.4f}', )
++            writer.add_scalar(f"reward", epi_r, epi)
++            writer.add_scalar(f"loss", epi_loss, epi)
++            writer.add_scalar(f"episode length", step, epi)
++            log.append([epi, epi_r, step])
+         # if epi % SAVE_INTERVAL == 0:
+             # model.save_model()
+             # np.save('log/'+timestamp, log)
+@@ -290,6 +294,15 @@ def rollout(env, model):
+ if __name__ == '__main__':
+     env = gym.make('CartPole-v1')
+     print(env.observation_space, env.action_space)
+-    models = load_models(env, 2, path='model/dqn')
++    models = load_models(env, 5, path='trained_models/')
+     ensemble_dqn = EnsembleDQN(env, models)
+-    rollout(env, ensemble_dqn)
+\ No newline at end of file
++    args = {
++        'wandb_project': 'ensemble_dqn',
++        'wandb_entity': 'quantumiracle',
++    }
++    run_name = f'ensemble_dqn'
++    args['wandb_name'] = run_name
++    init_wandb(args)
++    writer = SummaryWriter(f"runs/{run_name}")
++    rollout(env, ensemble_dqn, writer)
++    wandb.finish()
+\ No newline at end of file

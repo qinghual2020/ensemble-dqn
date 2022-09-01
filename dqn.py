@@ -223,13 +223,15 @@ class DQN(object):
 
     def save_model(self, model_path=None):
         if model_path is not None:
-            torch.save(self.eval_net.state_dict(), model_path)
+            torch.save(self.eval_net.state_dict(), model_path+'dqn')
+            torch.save(self.target_net.state_dict(), model_path+'dqn_target')
         else:
             torch.save(self.eval_net.state_dict(), 'model/dqn')
+            torch.save(self.target_net.state_dict(), 'model/dqn_target')
 
     def load_model(self, model_path=None):
-        self.eval_net.load_state_dict(torch.load(model_path))
-        self.update_target()
+        self.eval_net.load_state_dict(torch.load(model_path+'dqn'))
+        self.target_net.load_state_dict(torch.load(model_path+'dqn_target'))
 
     def update_target(self, ):
         """
@@ -265,7 +267,7 @@ def rollout(env, model):
         print('Ep: ', epi, '| Ep_r: ', epi_r, '| Steps: ', step, f'| Ep_Loss: {epi_loss:.4f}', )
         log.append([epi, epi_r, step])
         if epi % SAVE_INTERVAL == 0:
-            model.save_model(model_path='model/dqn2')
+            model.save_model(model_path='model/')
             # np.save('log/'+timestamp, log)
 
 if __name__ == '__main__':

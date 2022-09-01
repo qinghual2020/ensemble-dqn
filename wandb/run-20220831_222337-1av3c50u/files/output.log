@@ -1,0 +1,13 @@
+
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Collecting experience...
+Ep:  0 | Ep_r:  15.0 | Steps:  14 | Ep_Loss: 0.0000
+Ep:  5 | Ep_r:  55.0 | Steps:  54 | Ep_Loss: 0.0000
+Ep:  10 | Ep_r:  17.0 | Steps:  16 | Ep_Loss: 0.0000
+Ep:  15 | Ep_r:  12.0 | Steps:  11 | Ep_Loss: 0.0000
+Ep:  20 | Ep_r:  20.0 | Steps:  19 | Ep_Loss: 0.0000
+Ep:  25 | Ep_r:  11.0 | Steps:  10 | Ep_Loss: 0.0000
+Ep:  30 | Ep_r:  14.0 | Steps:  13 | Ep_Loss: 0.0000
+Ep:  35 | Ep_r:  30.0 | Steps:  29 | Ep_Loss: 0.0000
+Ep:  40 | Ep_r:  14.0 | Steps:  13 | Ep_Loss: 0.0000
+Ep:  45 | Ep_r:  22.0 | Steps:  21 | Ep_Loss: 0.0000

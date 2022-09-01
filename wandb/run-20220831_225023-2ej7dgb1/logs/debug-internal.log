@@ -1,0 +1,469 @@
+2022-08-31 22:50:23,204 INFO    StreamThr :1849958 [internal.py:wandb_internal():93] W&B internal server running at pid: 1849958, started at: 2022-08-31 22:50:23.204450
+2022-08-31 22:50:23,206 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: status
+2022-08-31 22:50:23,207 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: status
+2022-08-31 22:50:23,208 DEBUG   SenderThread:1849958 [sender.py:send():302] send: header
+2022-08-31 22:50:23,208 INFO    WriterThread:1849958 [datastore.py:open_for_write():75] open: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/run-2ej7dgb1.wandb
+2022-08-31 22:50:23,227 DEBUG   SenderThread:1849958 [sender.py:send():302] send: run
+2022-08-31 22:50:23,405 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: check_version
+2022-08-31 22:50:23,405 INFO    SenderThread:1849958 [dir_watcher.py:__init__():216] watching files in: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files
+2022-08-31 22:50:23,406 INFO    SenderThread:1849958 [sender.py:_start_run_threads():916] run started: 2ej7dgb1 with start time 1662000623.201938
+2022-08-31 22:50:23,406 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:23,406 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:23,406 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: check_version
+2022-08-31 22:50:23,505 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: run_start
+2022-08-31 22:50:23,514 DEBUG   HandlerThread:1849958 [meta.py:__init__():35] meta init
+2022-08-31 22:50:23,514 DEBUG   HandlerThread:1849958 [meta.py:__init__():50] meta init done
+2022-08-31 22:50:23,514 DEBUG   HandlerThread:1849958 [meta.py:probe():216] probe
+2022-08-31 22:50:23,523 DEBUG   HandlerThread:1849958 [meta.py:_setup_git():206] setup git
+2022-08-31 22:50:23,531 DEBUG   HandlerThread:1849958 [meta.py:_setup_git():213] setup git done
+2022-08-31 22:50:23,531 DEBUG   HandlerThread:1849958 [meta.py:_save_code():88] save code
+2022-08-31 22:50:23,536 DEBUG   HandlerThread:1849958 [meta.py:_save_code():109] save code done
+2022-08-31 22:50:23,536 DEBUG   HandlerThread:1849958 [meta.py:_save_patches():126] save patches
+2022-08-31 22:50:23,570 DEBUG   HandlerThread:1849958 [meta.py:_save_patches():168] save patches done
+2022-08-31 22:50:23,570 DEBUG   HandlerThread:1849958 [meta.py:_save_pip():54] save pip
+2022-08-31 22:50:23,571 DEBUG   HandlerThread:1849958 [meta.py:_save_pip():68] save pip done
+2022-08-31 22:50:23,571 DEBUG   HandlerThread:1849958 [meta.py:_save_conda():75] save conda
+2022-08-31 22:50:24,407 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:24,407 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/requirements.txt
+2022-08-31 22:50:24,407 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/diff.patch
+2022-08-31 22:50:24,407 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/conda-environment.yaml
+2022-08-31 22:50:24,408 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/code/ensemble_dqn.py
+2022-08-31 22:50:24,408 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/code
+2022-08-31 22:50:26,927 DEBUG   HandlerThread:1849958 [meta.py:_save_conda():85] save conda done
+2022-08-31 22:50:26,927 DEBUG   HandlerThread:1849958 [meta.py:probe():254] probe done
+2022-08-31 22:50:26,947 DEBUG   SenderThread:1849958 [sender.py:send():302] send: files
+2022-08-31 22:50:26,947 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-31 22:50:26,947 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file code/ensemble_dqn.py with policy now
+2022-08-31 22:50:26,948 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file diff.patch with policy now
+2022-08-31 22:50:26,952 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:50:26,952 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:50:26,955 INFO    HandlerThread:1849958 [handler.py:handle_tbrecord():727] handling tbrecord: tbrecord {
+  log_dir: "runs/ensemble_dqn"
+  save: true
+}
+_info {
+  stream_id: "2ej7dgb1"
+}
+
+2022-08-31 22:50:26,956 DEBUG   HandlerThread:1849958 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2022-08-31 22:50:27,112 INFO    Thread-18 :1849958 [upload_job.py:push():118] Skipped uploading /tmp/tmpxcz8e4y5wandb/36ki59ka-code/ensemble_dqn.py
+2022-08-31 22:50:27,114 DEBUG   SenderThread:1849958 [sender.py:send():302] send: telemetry
+2022-08-31 22:50:27,114 DEBUG   SenderThread:1849958 [sender.py:send():302] send: tbrecord
+2022-08-31 22:50:27,440 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/conda-environment.yaml
+2022-08-31 22:50:27,452 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:27,458 INFO    Thread-19 :1849958 [upload_job.py:push():138] Uploaded file /tmp/tmpxcz8e4y5wandb/39lst9k6-diff.patch
+2022-08-31 22:50:27,459 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-metadata.json
+2022-08-31 22:50:27,476 INFO    Thread-16 :1849958 [upload_job.py:push():138] Uploaded file /tmp/tmpxcz8e4y5wandb/2lkaxzmd-wandb-metadata.json
+2022-08-31 22:50:27,810 DEBUG   SenderThread:1849958 [sender.py:send():302] send: files
+2022-08-31 22:50:27,810 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0 with policy live
+2022-08-31 22:50:28,232 INFO    Thread-21 :1849958 [upload_job.py:push():138] Uploaded file /tmp/tmpxcz8e4y5wandb/1spc79xc-events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:28,431 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:29,431 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:30,432 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:31,432 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:33,433 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:35,433 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:37,046 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,047 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,048 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,048 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,048 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,070 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,070 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,071 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,097 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,097 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,097 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,120 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,120 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,121 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,138 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,139 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,139 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,143 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,143 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,143 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,162 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,162 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,162 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,162 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,162 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,163 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,163 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,163 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,163 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,164 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,164 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,164 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,164 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,164 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,165 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,165 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,212 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,212 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,212 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,212 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,213 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,213 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,235 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,236 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,236 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,259 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,259 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,260 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,296 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,297 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,297 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,314 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,314 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,315 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,315 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,315 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,315 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,334 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,334 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,334 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,335 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,335 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,335 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,377 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,378 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,378 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,398 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,398 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,399 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,415 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,415 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,416 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,416 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,416 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,416 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,416 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,417 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,417 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,417 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,417 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,417 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,417 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,434 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:37,434 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:37,434 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:37,875 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,875 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,876 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,876 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,876 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,877 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,877 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,877 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,877 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,877 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,877 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,878 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,878 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,878 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,878 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,878 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,878 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,878 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,878 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,879 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,879 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,879 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,879 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,879 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,879 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,879 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,880 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,880 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,880 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,880 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,881 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,881 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,881 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,881 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,881 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,881 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,881 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,882 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,882 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,882 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,882 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,883 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,883 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,883 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,883 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,883 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,883 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,883 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,884 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,885 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,885 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,885 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,885 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,885 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,886 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,886 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,886 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,887 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,887 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,887 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,887 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,887 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,887 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,887 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,887 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,888 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,888 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,888 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,888 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,888 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,888 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,888 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,889 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,889 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,889 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:37,889 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:37,890 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:38,435 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:39,435 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:41,438 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:42,120 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:50:42,121 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:50:43,439 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:44,918 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,920 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,926 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,926 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,926 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,927 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,927 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,927 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,927 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,927 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,927 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,928 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,928 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,928 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,928 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,928 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,929 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,929 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,929 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,929 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,930 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,931 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,931 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,931 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,931 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,931 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,931 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,932 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,932 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,932 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,933 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,933 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,933 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,933 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,933 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,933 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,933 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,933 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,934 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,934 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,934 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,935 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,935 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,935 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,936 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,936 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,936 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,936 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,936 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,936 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,936 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,937 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,937 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,938 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,938 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,938 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,938 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,944 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,944 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,945 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,959 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,959 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,959 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,969 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:44,970 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:44,970 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:44,970 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:45,440 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:45,440 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:45,440 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:47,440 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:47,792 DEBUG   SenderThread:1849958 [sender.py:send():302] send: telemetry
+2022-08-31 22:50:47,793 DEBUG   SenderThread:1849958 [sender.py:send():302] send: exit
+2022-08-31 22:50:47,793 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:47,793 INFO    SenderThread:1849958 [sender.py:send_exit():438] handling exit code: 0
+2022-08-31 22:50:47,794 INFO    SenderThread:1849958 [sender.py:send_exit():440] handling runtime: 24
+2022-08-31 22:50:47,794 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:47,794 INFO    SenderThread:1849958 [sender.py:send_exit():446] send defer
+2022-08-31 22:50:47,794 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:47,794 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:47,794 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-31 22:50:47,795 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:47,795 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-31 22:50:47,795 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 1
+2022-08-31 22:50:47,795 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:47,795 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-31 22:50:47,836 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:47,837 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-31 22:50:47,837 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 2
+2022-08-31 22:50:47,837 DEBUG   SenderThread:1849958 [sender.py:send():302] send: stats
+2022-08-31 22:50:47,838 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:47,838 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-31 22:50:47,838 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:47,838 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-31 22:50:47,838 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 3
+2022-08-31 22:50:47,839 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:47,839 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-31 22:50:48,441 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:49,441 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:53,918 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:53,918 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:53,933 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:53,933 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-31 22:50:53,933 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 4
+2022-08-31 22:50:53,933 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:53,933 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:53,934 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:53,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: history
+2022-08-31 22:50:53,934 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-31 22:50:53,934 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:53,937 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:53,937 DEBUG   SenderThread:1849958 [sender.py:send():302] send: summary
+2022-08-31 22:50:53,937 INFO    SenderThread:1849958 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:50:53,937 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:53,937 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-31 22:50:53,937 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 5
+2022-08-31 22:50:53,937 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:53,937 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-31 22:50:53,937 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:53,937 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-31 22:50:53,938 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 6
+2022-08-31 22:50:53,938 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:53,938 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-31 22:50:53,938 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:53,938 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-31 22:50:54,037 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:54,442 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:54,443 INFO    Thread-12 :1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/config.yaml
+2022-08-31 22:50:57,155 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 7
+2022-08-31 22:50:57,155 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,155 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:57,155 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 7
+2022-08-31 22:50:57,156 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:57,156 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 7
+2022-08-31 22:50:57,156 INFO    SenderThread:1849958 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-31 22:50:57,257 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():392] scan: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-metadata.json wandb-metadata.json
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0 events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/conda-environment.yaml conda-environment.yaml
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/requirements.txt requirements.txt
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/diff.patch diff.patch
+2022-08-31 22:50:57,444 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json wandb-summary.json
+2022-08-31 22:50:57,445 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/config.yaml config.yaml
+2022-08-31 22:50:57,445 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log output.log
+2022-08-31 22:50:57,445 INFO    SenderThread:1849958 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/code/ensemble_dqn.py code/ensemble_dqn.py
+2022-08-31 22:50:57,447 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 8
+2022-08-31 22:50:57,448 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,454 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:57,455 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 8
+2022-08-31 22:50:57,460 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:57,460 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 8
+2022-08-31 22:50:57,460 INFO    SenderThread:1849958 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-31 22:50:57,558 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,559 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,662 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,662 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,763 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,764 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,822 INFO    Thread-25 :1849958 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/wandb-summary.json
+2022-08-31 22:50:57,834 INFO    Thread-27 :1849958 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/output.log
+2022-08-31 22:50:57,851 INFO    Thread-22 :1849958 [upload_job.py:push():138] Uploaded file /tmp/tmpxcz8e4y5wandb/1y3ge2bm-events.out.tfevents.1662000626.quantumiracle-XPS-8940.1849911.0
+2022-08-31 22:50:57,865 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,867 INFO    Thread-23 :1849958 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/conda-environment.yaml
+2022-08-31 22:50:57,867 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:57,868 INFO    Thread-24 :1849958 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/requirements.txt
+2022-08-31 22:50:57,894 INFO    Thread-26 :1849958 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/files/config.yaml
+2022-08-31 22:50:57,970 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:57,970 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:58,072 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:58,072 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:58,094 INFO    Thread-11 :1849958 [sender.py:transition_state():459] send defer: 9
+2022-08-31 22:50:58,095 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:58,095 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 9
+2022-08-31 22:50:58,095 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:58,096 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 9
+2022-08-31 22:50:58,150 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 10
+2022-08-31 22:50:58,150 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:58,150 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 10
+2022-08-31 22:50:58,151 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:58,151 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 10
+2022-08-31 22:50:58,151 INFO    SenderThread:1849958 [sender.py:transition_state():459] send defer: 11
+2022-08-31 22:50:58,151 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:50:58,151 DEBUG   SenderThread:1849958 [sender.py:send():302] send: final
+2022-08-31 22:50:58,151 INFO    HandlerThread:1849958 [handler.py:handle_request_defer():164] handle defer: 11
+2022-08-31 22:50:58,151 DEBUG   SenderThread:1849958 [sender.py:send():302] send: footer
+2022-08-31 22:50:58,151 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:50:58,151 INFO    SenderThread:1849958 [sender.py:send_request_defer():455] handle sender defer: 11
+2022-08-31 22:50:58,174 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:50:58,174 DEBUG   SenderThread:1849958 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:50:58,174 INFO    SenderThread:1849958 [file_pusher.py:join():176] waiting for file pusher
+2022-08-31 22:50:58,422 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: sampled_history
+2022-08-31 22:50:58,423 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: get_summary
+2022-08-31 22:50:58,424 DEBUG   HandlerThread:1849958 [handler.py:handle_request():141] handle_request: shutdown
+2022-08-31 22:50:58,424 INFO    HandlerThread:1849958 [handler.py:finish():810] shutting down handler
+2022-08-31 22:50:59,151 INFO    WriterThread:1849958 [datastore.py:close():279] close: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_225023-2ej7dgb1/run-2ej7dgb1.wandb
+2022-08-31 22:50:59,320 INFO    SenderThread:1849958 [sender.py:finish():1312] shutting down sender
+2022-08-31 22:50:59,320 INFO    SenderThread:1849958 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-31 22:50:59,320 INFO    SenderThread:1849958 [file_pusher.py:join():176] waiting for file pusher
+2022-08-31 22:51:00,427 INFO    MainThread:1849958 [internal.py:handle_exit():80] Internal process exited

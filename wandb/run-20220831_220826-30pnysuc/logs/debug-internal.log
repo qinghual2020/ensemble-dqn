@@ -1,0 +1,198 @@
+2022-08-31 22:08:26,384 INFO    StreamThr :1840554 [internal.py:wandb_internal():93] W&B internal server running at pid: 1840554, started at: 2022-08-31 22:08:26.383851
+2022-08-31 22:08:26,385 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: status
+2022-08-31 22:08:26,386 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: status
+2022-08-31 22:08:26,388 DEBUG   SenderThread:1840554 [sender.py:send():302] send: header
+2022-08-31 22:08:26,388 INFO    WriterThread:1840554 [datastore.py:open_for_write():75] open: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/run-30pnysuc.wandb
+2022-08-31 22:08:26,403 DEBUG   SenderThread:1840554 [sender.py:send():302] send: run
+2022-08-31 22:08:26,571 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: check_version
+2022-08-31 22:08:26,580 INFO    SenderThread:1840554 [dir_watcher.py:__init__():216] watching files in: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files
+2022-08-31 22:08:26,580 INFO    SenderThread:1840554 [sender.py:_start_run_threads():916] run started: 30pnysuc with start time 1661998106.382065
+2022-08-31 22:08:26,580 DEBUG   SenderThread:1840554 [sender.py:send():302] send: summary
+2022-08-31 22:08:26,580 INFO    SenderThread:1840554 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:08:26,581 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: check_version
+2022-08-31 22:08:26,629 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: run_start
+2022-08-31 22:08:26,637 DEBUG   HandlerThread:1840554 [meta.py:__init__():35] meta init
+2022-08-31 22:08:26,638 DEBUG   HandlerThread:1840554 [meta.py:__init__():50] meta init done
+2022-08-31 22:08:26,638 DEBUG   HandlerThread:1840554 [meta.py:probe():216] probe
+2022-08-31 22:08:26,645 DEBUG   HandlerThread:1840554 [meta.py:_setup_git():206] setup git
+2022-08-31 22:08:26,652 DEBUG   HandlerThread:1840554 [meta.py:_setup_git():213] setup git done
+2022-08-31 22:08:26,652 DEBUG   HandlerThread:1840554 [meta.py:_save_code():88] save code
+2022-08-31 22:08:26,656 DEBUG   HandlerThread:1840554 [meta.py:_save_code():109] save code done
+2022-08-31 22:08:26,656 DEBUG   HandlerThread:1840554 [meta.py:_save_patches():126] save patches
+2022-08-31 22:08:26,676 DEBUG   HandlerThread:1840554 [meta.py:_save_patches():168] save patches done
+2022-08-31 22:08:26,676 DEBUG   HandlerThread:1840554 [meta.py:_save_pip():54] save pip
+2022-08-31 22:08:26,677 DEBUG   HandlerThread:1840554 [meta.py:_save_pip():68] save pip done
+2022-08-31 22:08:26,677 DEBUG   HandlerThread:1840554 [meta.py:_save_conda():75] save conda
+2022-08-31 22:08:27,581 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/conda-environment.yaml
+2022-08-31 22:08:27,581 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/requirements.txt
+2022-08-31 22:08:27,582 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/code/train_dqn.py
+2022-08-31 22:08:27,582 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-summary.json
+2022-08-31 22:08:27,582 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/code
+2022-08-31 22:08:29,583 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/conda-environment.yaml
+2022-08-31 22:08:29,696 DEBUG   HandlerThread:1840554 [meta.py:_save_conda():85] save conda done
+2022-08-31 22:08:29,696 DEBUG   HandlerThread:1840554 [meta.py:probe():254] probe done
+2022-08-31 22:08:29,715 DEBUG   SenderThread:1840554 [sender.py:send():302] send: files
+2022-08-31 22:08:29,715 INFO    SenderThread:1840554 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2022-08-31 22:08:29,716 INFO    SenderThread:1840554 [sender.py:_save_file():1156] saving file code/train_dqn.py with policy now
+2022-08-31 22:08:29,721 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:08:29,721 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:08:29,800 INFO    Thread-17 :1840554 [upload_job.py:push():118] Skipped uploading /tmp/tmph5m61jptwandb/c10fcbjk-code/train_dqn.py
+2022-08-31 22:08:29,802 DEBUG   SenderThread:1840554 [sender.py:send():302] send: telemetry
+2022-08-31 22:08:30,098 INFO    Thread-16 :1840554 [upload_job.py:push():138] Uploaded file /tmp/tmph5m61jptwandb/1698uuyk-wandb-metadata.json
+2022-08-31 22:08:30,584 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:30,585 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_created():275] file/dir created: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-metadata.json
+2022-08-31 22:08:32,586 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:34,586 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:36,587 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:38,587 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:40,588 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:42,589 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:44,589 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:44,806 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:08:44,806 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:08:46,590 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:48,591 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:50,591 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:52,592 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:54,593 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:54,692 DEBUG   SenderThread:1840554 [sender.py:send():302] send: stats
+2022-08-31 22:08:56,593 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:57,594 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/config.yaml
+2022-08-31 22:08:58,594 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:08:59,890 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:08:59,890 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:09:00,595 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:02,595 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:04,596 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:06,597 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:08,598 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:10,598 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:12,599 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:14,600 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:14,973 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:09:14,973 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:09:16,600 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:18,601 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:20,602 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:22,603 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:24,603 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:24,751 DEBUG   SenderThread:1840554 [sender.py:send():302] send: stats
+2022-08-31 22:09:26,604 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:28,605 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:30,055 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:09:30,055 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:09:30,606 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:32,607 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:34,607 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:36,608 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:38,609 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:40,610 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:42,610 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:44,611 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:45,131 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:09:45,132 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:09:46,612 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:48,612 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:50,613 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:52,614 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:54,615 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:54,810 DEBUG   SenderThread:1840554 [sender.py:send():302] send: stats
+2022-08-31 22:09:56,615 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:09:58,616 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:00,218 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:10:00,218 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:10:00,617 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:02,617 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:04,618 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:06,619 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:08,620 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:10,620 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:12,621 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:14,622 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:15,334 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:10:15,334 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:10:16,622 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:18,623 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:20,624 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:22,625 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:24,626 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:24,869 DEBUG   SenderThread:1840554 [sender.py:send():302] send: stats
+2022-08-31 22:10:26,626 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:28,627 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:30,414 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: stop_status
+2022-08-31 22:10:30,414 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: stop_status
+2022-08-31 22:10:30,628 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:32,629 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:34,241 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:10:34,241 DEBUG   SenderThread:1840554 [sender.py:send():302] send: exit
+2022-08-31 22:10:34,242 INFO    SenderThread:1840554 [sender.py:send_exit():438] handling exit code: 255
+2022-08-31 22:10:34,242 INFO    SenderThread:1840554 [sender.py:send_exit():440] handling runtime: 127
+2022-08-31 22:10:34,242 INFO    SenderThread:1840554 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:10:34,242 INFO    SenderThread:1840554 [sender.py:send_exit():446] send defer
+2022-08-31 22:10:34,242 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: poll_exit
+2022-08-31 22:10:34,242 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,243 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 0
+2022-08-31 22:10:34,243 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,243 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 0
+2022-08-31 22:10:34,243 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 1
+2022-08-31 22:10:34,243 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,243 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 1
+2022-08-31 22:10:34,287 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,287 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 1
+2022-08-31 22:10:34,287 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 2
+2022-08-31 22:10:34,287 DEBUG   SenderThread:1840554 [sender.py:send():302] send: stats
+2022-08-31 22:10:34,288 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,288 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 2
+2022-08-31 22:10:34,288 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,288 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 2
+2022-08-31 22:10:34,288 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 3
+2022-08-31 22:10:34,288 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,288 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 3
+2022-08-31 22:10:34,288 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,288 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 3
+2022-08-31 22:10:34,288 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 4
+2022-08-31 22:10:34,289 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,289 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 4
+2022-08-31 22:10:34,289 DEBUG   SenderThread:1840554 [sender.py:send():302] send: summary
+2022-08-31 22:10:34,289 INFO    SenderThread:1840554 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2022-08-31 22:10:34,289 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,289 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 4
+2022-08-31 22:10:34,289 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 5
+2022-08-31 22:10:34,289 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,290 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 5
+2022-08-31 22:10:34,290 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,290 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 5
+2022-08-31 22:10:34,290 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 6
+2022-08-31 22:10:34,290 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: defer
+2022-08-31 22:10:34,290 INFO    HandlerThread:1840554 [handler.py:handle_request_defer():164] handle defer: 6
+2022-08-31 22:10:34,290 DEBUG   SenderThread:1840554 [sender.py:send_request():316] send_request: defer
+2022-08-31 22:10:34,290 INFO    SenderThread:1840554 [sender.py:send_request_defer():455] handle sender defer: 6
+2022-08-31 22:10:34,344 DEBUG   HandlerThread:1840554 [handler.py:handle_request():141] handle_request: poll_exit
+2022-08-31 22:10:34,630 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:34,630 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-summary.json
+2022-08-31 22:10:35,496 WARNING StreamThr :1840554 [internal.py:is_dead():388] Internal process exiting, parent pid 1840475 disappeared
+2022-08-31 22:10:35,496 ERROR   StreamThr :1840554 [internal.py:wandb_internal():149] Internal process shutdown.
+2022-08-31 22:10:36,289 INFO    WriterThread:1840554 [datastore.py:close():279] close: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/run-30pnysuc.wandb
+2022-08-31 22:10:36,345 INFO    HandlerThread:1840554 [handler.py:finish():810] shutting down handler
+2022-08-31 22:10:36,630 INFO    Thread-12 :1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:37,924 INFO    SenderThread:1840554 [sender.py:transition_state():459] send defer: 7
+2022-08-31 22:10:37,924 INFO    SenderThread:1840554 [sender.py:finish():1312] shutting down sender
+2022-08-31 22:10:37,924 INFO    SenderThread:1840554 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:finish():392] scan: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-metadata.json wandb-metadata.json
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/conda-environment.yaml conda-environment.yaml
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/requirements.txt requirements.txt
+2022-08-31 22:10:38,631 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-summary.json wandb-summary.json
+2022-08-31 22:10:38,636 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/config.yaml config.yaml
+2022-08-31 22:10:38,636 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log output.log
+2022-08-31 22:10:38,644 INFO    SenderThread:1840554 [dir_watcher.py:finish():406] scan save: /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/code/train_dqn.py code/train_dqn.py
+2022-08-31 22:10:38,644 INFO    SenderThread:1840554 [file_pusher.py:finish():171] shutting down file pusher
+2022-08-31 22:10:38,644 INFO    SenderThread:1840554 [file_pusher.py:join():176] waiting for file pusher
+2022-08-31 22:10:39,011 INFO    Thread-20 :1840554 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/wandb-summary.json
+2022-08-31 22:10:39,038 INFO    Thread-22 :1840554 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/output.log
+2022-08-31 22:10:39,044 INFO    Thread-21 :1840554 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/config.yaml
+2022-08-31 22:10:39,049 INFO    Thread-19 :1840554 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/requirements.txt
+2022-08-31 22:10:39,113 INFO    Thread-18 :1840554 [upload_job.py:push():138] Uploaded file /home/quantumiracle/research/ensemble-dqn/wandb/run-20220831_220826-30pnysuc/files/conda-environment.yaml
+2022-08-31 22:10:39,500 INFO    MainThread:1840554 [internal.py:handle_exit():80] Internal process exited
+2022-08-31 22:10:39,500 WARNING MsgRouterThr:1840554 [router.py:message_loop():73] EOFError seen in message_loop
